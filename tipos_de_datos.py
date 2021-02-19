@@ -200,8 +200,8 @@ print (apellidos_set5)
 `apellidos_set1` y `apellidos_set2`.
 """
 print('\n26. Crear la variable `apellidos_set6` con la diferencia simétrica entre  `apellidos_set1` y `apellidos_set2`.\n') 
-apellidos_set6 = apellidos_set1.symmetric_difference(apellidos_set2)
-print (apellidos_set6)
+apellidos_set5 = apellidos_set1.symmetric_difference(apellidos_set2)
+print (apellidos_set5)
 
 """Crear la variable `var3` con la respuesta a la pregunta de si `apellidos_set3` 
 es un subconjunto de `apellidos_set1`.
@@ -215,7 +215,7 @@ print (var3)
 del 0 al 4 de la lista `apellidos_lista`.
 """
 print('\n28. Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista del 0 al 4 de la lista `apellidos_lista`..\n') 
-apellidos_dict = dict.fromkeys(apellidos_list[0:3])
+apellidos_dict = dict.fromkeys(apellidos_list[0:4])
 print(apellidos_list[0:3])
 print (apellidos_dict)
 
@@ -237,7 +237,7 @@ guardarlo en la variable `apellido_gonzalez`.
 """
 
 print('\n31. Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y guardarlo en la variable `apellido_gonzalez`.\n') 
-apellido_gonzalez = apellidos_dict.get('gonzalez')
+apellido_gonzalez = apellidos_dict.pop('gonzalez')
 print(apellido_gonzalez)
 
 
