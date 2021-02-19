@@ -62,14 +62,14 @@ print (apellido2)
 """Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene 
 solo letras mayúsculas.
 """
-apellido_esmayuscula = apellido2.isupper()
+apellido_es_mayuscula = apellido2.isupper()
 print('\n9. Guardar en `apellido_es_mayuscula` si `apellido2` es un string que contiene  solo letras mayúsculas.`.\n')
-print (apellido_esmayuscula)
+print (apellido_es_mayuscula)
 
 """Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas, 
 o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3`.
 """
-apellido3  = apellido2.lower() if apellido_esmayuscula else apellido2.upper()
+apellido3  = apellido2.lower() if apellido_es_mayuscula else apellido2.upper()
 print('\n10. Convertir la variable `apellido2` de mayúsculas a minúsculas si está en mayúsculas,  o de minúsculas a mayúsculas si está en minúsculas y guardarla en `apellido3``.\n')
 print(apellido3)
 
@@ -131,7 +131,7 @@ elemento 56 al 70 de la variable `apellidos_list`.
 """
 
 print('\n17. Agregar (concatenar) a la variable `apellidos_list2`, la lista obtenida del elemento 56 al 70 de la variable `apellidos_list`.\n') 
-apellidos_list2.extend(apellidos_list[56:70])
+apellidos_list2.extend(apellidos_list[56:71])
 print(apellidos_list2)
 
 """Invertir el orden actual de la variable `apellidos_list2`.
@@ -146,9 +146,8 @@ variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del
 """
 
 print('\n19. Crear variable `apellidos_set1` con los elementos del 56 al 66 de la variable `apellidos_list`, y crear variable `apellidos_set2` con elementos del 62 al 76 de la variable `apellidos_list``.\n') 
-apellidos_set1 = set(apellidos_list[56:66])
-apellidos_set2 = set(apellidos_list[62:76])
-
+apellidos_set1 = set(apellidos_list[56:67])
+apellidos_set2 = set(apellidos_list[62:77])
 print(apellidos_set1)
 print(apellidos_set2)
 """Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la 
@@ -156,16 +155,17 @@ variable `apellidos_list`.
 """
 
 print('\n20. Agregar a variable `apellidos_set1` el elemento en la pocisión 67 de la variable `apellidos_list`.\n') 
-apellidos_set1.add(apellidos_list[67])
+apellidos_set1.add(apellidos_list[66])
 print(apellidos_set1)
 
+print(apellidos_list[66])
 
 """Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la 
 variable `apellidos_list`.
 """
 print('\n21. Agregar a variable `apellidos_set1` los elementos del 68 al 70 de la variable `apellidos_list`.`.\n') 
-print(apellidos_list[68:70])
-apellidos_set1.update(apellidos_list[68:70])
+print(apellidos_list[67:70])
+apellidos_set1.update(apellidos_list[67:70])
 print(apellidos_set1)
 
 """Eliminar el elemento " CAMPOS  " de la variable `apellidos_set1`.
@@ -255,3 +255,4 @@ print('\n33. Sacar el valor de la llave "no_existe" del diccionario `apellidos_d
 
 apellido_none = apellidos_dict.get('no_existe')
 print (apellido_none)
+print (apellidos_set1 )
