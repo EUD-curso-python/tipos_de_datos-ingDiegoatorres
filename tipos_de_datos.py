@@ -215,7 +215,7 @@ print (var3)
 del 0 al 4 de la lista `apellidos_lista`.
 """
 print('\n28. Crear la variable `apellidos_dict` usando la función `fromkeys` con la lista del 0 al 4 de la lista `apellidos_lista`..\n') 
-apellidos_dict = dict.fromkeys(apellidos_list[0:4])
+apellidos_dict = dict.fromkeys(apellidos_list[0:5])
 print(apellidos_list[0:3])
 print (apellidos_dict)
 
@@ -239,7 +239,6 @@ guardarlo en la variable `apellido_gonzalez`.
 print('\n31. Sacar el valor de la llave "gonzalez" del diccionario `apellidos_dict` y guardarlo en la variable `apellido_gonzalez`.\n') 
 apellido_gonzalez = apellidos_dict.pop('gonzalez')
 print(apellido_gonzalez)
-
 
 
 """Eliminar el último elemento del diccionario `apellidos_dict`.
